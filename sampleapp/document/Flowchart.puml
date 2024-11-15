@@ -1,0 +1,13 @@
+@startuml
+start
+:Pengguna memasukkan data pembayaran
+ (nama, jumlah, tanggal);
+if (Data valid?) then (Ya)
+    :Simpan data ke tabel 'pembayarans';
+    :Tampilkan pesan sukses;
+else (Tidak)
+    :Tampilkan pesan error;
+endif
+:Kembali ke halaman input;
+stop
+@enduml

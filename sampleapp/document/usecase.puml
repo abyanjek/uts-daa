@@ -1,0 +1,15 @@
+@startuml
+!define RECTANGLE rect
+
+actor "Pengguna" as User
+
+rectangle Sistem {
+    usecase "Masukkan Data Pembayaran" as U1
+    usecase "Simpan ke Database" as U2
+    usecase "Lihat Data Pembayaran" as U3
+}
+
+User --> U1
+U1 --> U2
+User --> U3
+@enduml
